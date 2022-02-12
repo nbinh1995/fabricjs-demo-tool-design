@@ -1,0 +1,102 @@
+.Arial{font-family:"Arial";}
+.Helvetica{font-family:"Helvetica";}
+.MyriadPro{font-family:"Myriad Pro";}
+.Delicious{font-family:"Delicious";}
+.Verdana{font-family:"Verdana";}
+.Georgia{font-family:"Georgia";}
+.Courier{font-family:"Courier";}
+.ComicSansMS{font-family:"Comic Sans MS";}
+.Impact{font-family:"Impact";}
+.Monaco{font-family:"Monaco";}
+.Optima{font-family:"Optima";}
+.HoeflerText{font-family:"Hoefler Text";}
+.Plaster{font-family:"Plaster";}
+.Engagement{font-family:"Engagement";}
+.global_tool{
+    position: relative;
+    z-index: 11;
+}
+.color-preview {
+    position: relative;
+    border: 1px solid #CCC;
+    margin: 2px;
+    zoom: 1;
+    vertical-align: top;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.color-preview.color-preview--square {
+    border-radius: 0;
+}
+.color-preview.color-preview--square::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 6 Free";
+    content: '\f043';
+    font-weight: 900;
+    position: absolute;
+    font-size: 5px;
+    right: 2px;
+    bottom: 0px;
+    z-index: 11;
+}
+.color-preview.color-preview--square::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: #CCC;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.image-preview {
+    border: 2px solid #6c757d; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: contain; 
+    height: 150px; 
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image-preview.image-preview--upload {
+    border: 0;
+    background-size: 50%;
+}
+.page-tshirt{
+    width: 530px; height: 630px;
+    position: relative; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+.tshirtFacing{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.drawingArea{
+    align-self: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 400px;
+    border: 0;
+}
+
+.drawingArea:hover{
+    border: 1px solid #CCC;
+}
+canvas{
+    -webkit-user-select: none;
+}
